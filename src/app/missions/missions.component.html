@@ -1,0 +1,50 @@
+<div class="content">
+    <div class="upcoming-missions">
+        <div class="container">
+            <h3>MISSIONS</h3>
+
+            <table class="table table-striped" [mfData]="this.missions" #mf="mfDataTable" [mfRowsOnPage]="25">
+                    <thead>
+                    <tr>
+                        <th style="width: 2%;">
+                            <mfDefaultSorter by="flight_number">Flight</mfDefaultSorter>
+                        </th>
+                        <th style="width: 15%;">
+                            <mfDefaultSorter by="mission_name">Mission</mfDefaultSorter>
+                        </th>
+                        <th style="width: 10%;">
+                            <mfDefaultSorter by="rocket">Vehicle</mfDefaultSorter>
+                        </th>
+                        <th style="width: 15%;">
+                            <mfDefaultSorter by="launch_site">Launch Site</mfDefaultSorter>
+                        </th>
+                        <th style="width: 10%;">
+                            <mfDefaultSorter by="launch_date_unix">Lauch Year</mfDefaultSorter>
+                        </th>
+                        <th style="width: 48%;">
+                            <mfDefaultSorter by="details">Details</mfDefaultSorter>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr (click)="m.links.article_link ? goTo(m.links.article_link) : ''" *ngFor="let m of mf.data">
+                            <td>{{m.flight_number}}</td>
+                            <td>{{m.mission_name}}</td>
+                            <td>{{m.rocket.rocket_name}}</td>
+                            <td>{{m.launch_site.site_name}}</td>
+                            <td>{{m.launch_date_unix*1000 | date}}</td>
+                            <td>{{m.details}}</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <mfBootstrapPaginator ></mfBootstrapPaginator>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+        </div>
+    </div>
+    <!-- MISSION-SUMMARY ENDS -->
+</div>

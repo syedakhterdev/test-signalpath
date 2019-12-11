@@ -1,0 +1,314 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    background: #00131e;
+    padding-top: 63px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* HOMEPAGE CSS STARTS */
+
+/* HEADER CSS STARTS */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #00131e;
+    border-bottom: 1px solid #005388;
+}
+header .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.header-inner a.logo {
+    display: inline-block;
+    max-width: 450px;
+    width: 100%;
+}
+.header-inner ul.header-links {
+    display: flex;
+    align-items: center;
+}
+ul.header-links li {
+    padding: 0 15px;
+}
+ul.header-links li a {
+    color: #a8aaad;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+ul.header-links li a:hover {
+    color: #005388;
+}
+/* HEADER CSS ENDS */
+
+/* UPCOMING-MISSION CSS STARTS */
+.upcoming-missions {
+    padding: 50px 0;
+}
+.upcoming-missions h3 {
+    color: #a8aaad;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+.upcoming-missions table {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 25px auto;
+    width: 100%;
+    border-spacing: 0;
+}   
+.upcoming-missions table tr td, .upcoming-missions table tr th {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding: 15px;
+}
+.upcoming-missions table thead tr{
+    background: #002235;
+}
+.upcoming-missions table tbody tr:nth-child(even){
+    background: transparent
+}
+.upcoming-missions table tbody tr:nth-child(odd){
+    background: rgba(255, 255, 255, 0.03);
+}
+.upcoming-missions table tr th {
+    color: #f6c744;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.upcoming-missions table tr td, .upcoming-missions table tr td a {
+    cursor: pointer;
+    font-weight: 400;
+    color: #e4e4e4;
+}
+a.btn-show-more {
+    color: #f6c744;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+a.btn-show-more:hover {
+    text-decoration: underline;
+}
+/* UPCOMING-MISSION CSS ENDS */
+
+/* FOOTER CSS STARTS */
+footer {
+    padding: 20px 0;
+}
+footer .copyright-info {
+    text-align: center;
+    color: #0e4c70;
+    font-size: 14px;
+}
+/* FOOTER CSS END */
+
+/* HOMEPAGE CSS ENDS */
+
+/* MISSIONS-PAGE CSS STARTS */
+
+/* BANNER CSS STARTS */
+
+.banner {
+    background: url("assets/images/falcon9.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 95px 0px;
+}
+.banner-content {
+    text-align: center;
+}
+.banner-content h1 {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 500;
+    color: #a8aaad;
+    margin: 20px 0;
+}
+.banner-content a.btn-watch {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #f6c744;
+    color: #000;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+/* BANNER CSS STARTS */
+
+/* MISSION-SUMMARY CSS STARTS */
+.mission-summary {
+    padding: 75px 0;
+}
+.mission-summary h3 {
+    color: #a8aaad;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+.mission-summary .ms-blog {
+    background: #002235;
+}
+.ms-blog .msb-top {
+    padding: 8px 20px;
+    border-left: 5px solid #008000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ms-blog .msb-top span {
+    color: #008000;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+.ms-blog .msb-content {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border-bottom: 30px solid #002235;
+    background-image: linear-gradient(to bottom, #00111a, #041c29, #02263a, #00304c, #003a5e);
+}
+.msb-content .msb-img {
+    width: 20%;
+}
+.msb-content .msb-info {
+    width: 80%;
+    padding: 0 30px;
+}
+.msb-content .msb-info h4 {
+    color: #f6c744;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.msb-info .msb-text {
+    display: flex;
+}
+.msb-text p {
+    color: #e4e4e4;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.msb-text ul {
+    min-width: 250px;
+    border-left: 1px dashed#f6c744;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.msb-text ul li {
+    color: #e4e4e4;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+/* MISSION-SUMMARY CSS ENDS */
+
+/* ABOUT CSS STARTS */
+.about {
+    padding: 50px 0;
+}
+.about h3 {
+    color: #a8aaad;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+.about .about-descript {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-descript .about-img {
+    width: 30%;
+    text-align: center;
+}
+.about-descript .about-img img {
+    max-height: 800px;
+}
+.about-descript .about-blogs {
+    width: 70%;
+}
+.about-blogs .about-info {
+    margin-bottom: 25px;
+}
+.about-info h4 {
+    color: #a8aaad;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 15px;
+}   
+.about-info h6 {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    background: rgba(246, 199, 68, 0.5);
+    padding: 0 8px;
+    margin-bottom: 15px;
+}
+.about-info ul li {
+    border-bottom: 1px dashed#a8aaad;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+.about-info ul li h5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f6c744;
+    text-transform: uppercase;
+}
+.about-info ul li span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #a8aaad;
+    text-transform: uppercase;
+}
+/* ABOUT CSS ENDS */
+
+/* MISSIONS-PAGE CSS ENDS */
